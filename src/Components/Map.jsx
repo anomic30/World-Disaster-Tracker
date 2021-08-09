@@ -1,11 +1,14 @@
 import { useState, React, useEffect } from 'react';
-import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { Marker } from 'react-map-gl';
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
 import { IoMdFlame } from "react-icons/io";
 import { GiSmokingVolcano } from "react-icons/gi";
 import Axios from 'axios';
 import Desc from './Desc';
 import '../Styles/Map.css';
+// eslint-disable-next-line import/no-webpack-loader-syntax
+mapboxgl.workerClass = require('worker-loader!mapbox-gl/dist/mapbox-gl-csp-worker').default;
 require('dotenv').config();
 
 const TOKEN = process.env.REACT_APP_MAPBOX_TOKEN;
