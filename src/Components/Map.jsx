@@ -1,4 +1,5 @@
 import { useState, React, useEffect } from 'react';
+import 'mapbox-gl/dist/mapbox-gl.css';
 import ReactMapGL, { Marker } from 'react-map-gl';
 import { IoMdFlame } from "react-icons/io";
 import { GiSmokingVolcano } from "react-icons/gi";
