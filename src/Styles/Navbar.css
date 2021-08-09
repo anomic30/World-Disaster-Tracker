@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;800;900&display=swap');
+
 .navbar{
+    z-index: 999;
     height: 6vh;
     width: 100vw;
     color: rgb(240, 58, 34);
-    background-color: black;
-    text-align: center;
+    background-color: rgb(37, 30, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-family: 'Rubik', sans-serif;
 }
